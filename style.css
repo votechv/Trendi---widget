@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.obal{
+    max-width: 500px;
+    margin: 20px;
+}
+
+.trendi-01__widget-static{
+    border: 1px solid rgba(128, 128, 128, 0.5);
+}
+.trendi-01__widget-static__transport{
+    padding: 20px;
+}
+
+.static-transport-ico, .static-small-ico{
+    width: 100%;
+    max-width: 30px;
+    max-height: 50px;
+}
+
+.transport-h2, .small-h2{
+    font-size: 17px;
+    padding: 5px 0px;
+}
+
+.transport-h3{
+    font-size: 17px;
+    font-weight: 100;
+    padding: 5px 0px;
+}
+
+.transport-free{
+    color: #6434fc;
+    font-weight: bold;   
+}
+
+.trendi-01__widget-static__small{
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    border-top: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.static-small-ico{
+    margin-right: 20px;
+}
+
+.trendi-01-obl-drawer{
+    margin-top: 20px;
+}
+
+
+.trendi-01__drawer{
+    padding: 20px 10px;
+    border-top: 1px solid rgba(128, 128, 128, 0.5);
+
+}
+   
+   .trendi-01-drawer__content-wrapper {
+     font-size: 1.25em;
+     line-height: 1.4em;
+     max-height: 0px;
+     overflow: hidden;
+     transition: 0.25s ease-in-out;
+   }
+   
+   .drawer__title{
+    cursor:pointer;
+   }
+   .drawer__title::after {
+     border-style: solid;
+     border-width: 1px 1px 0 0;
+     content: " ";
+     display: inline-block;
+     float: right;
+     height: 10px;
+     left: 2px;
+     position: relative;
+     right: 20px;
+     top: 2px;
+     transform: rotate(135deg);
+     transition: 0.35s ease-in-out;
+     vertical-align: top;
+     width: 10px;
+   }
+
+   .drawer__title{
+    font-size: 17px;
+    padding: 5px 0px;
+    font-weight: bold;
+   }
+   
+
+   
+   .trendi-01-drawer__trigger:checked
+     + .drawer__title
+     + .trendi-01-drawer__content-wrapper {
+     max-height: 350px;
+   }
+   
+   .trendi-01-drawer__trigger:checked + .drawer__title::after {
+     transform: rotate(-45deg);
+     transition: 0.25s ease-in-out;
+   }
+   
+   input[type="checkbox"] {
+     display: none;
+   }
+
+   .drawer-content-single{
+       display: block;
+       line-height: 140%;
+       padding: 5px 0px;
+       font-size: 16px;
+   }
+   
+ 
+
